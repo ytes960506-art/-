@@ -53,7 +53,6 @@ courses.forEach(course => {
   coursesContainer.appendChild(div);
 });
 
-
 // Projects Render
 const projectsContainer = document.getElementById("projects-container");
 
