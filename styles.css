@@ -152,8 +152,8 @@ body {
 }
 
 .course-card, .project-card, .skill-group {
-    background-color: rgba(30, 41, 59, 0.5); /* 半透明 */
-    backdrop-filter: blur(10px); /* 磨砂玻璃效果 */
+    background-color: rgba(30, 41, 59, 0.5); 
+    backdrop-filter: blur(10px); 
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -174,7 +174,6 @@ body {
   font-size: 0.8rem;
   color: #cbd5f5;
 }
-
 
 /* ===================== */
 /* Projects */
@@ -214,7 +213,6 @@ body {
   font-size: 0.8rem;
   color: #cbd5f5;
 }
-
 
 /* ===================== */
 /* Skills */
