@@ -7,7 +7,7 @@
 
 /* Base */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', 'Noto Sans TC', sans-serif;
     background-color: #0f172a;
     color: #e5e7eb;
     line-height: 1.6;
@@ -58,17 +58,15 @@ body {
 
 /* Hero */
 .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    margin-top: 60px;
+    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
 }
 
 .hero-name {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
 }
 
@@ -153,11 +151,11 @@ body {
   gap: 20px;
 }
 
-.course-card {
-  background-color: #1e293b;
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #334155;
+.course-card, .project-card, .skill-group {
+    background-color: rgba(30, 41, 59, 0.5); /* 半透明 */
+    backdrop-filter: blur(10px); /* 磨砂玻璃效果 */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .course-title {
@@ -196,8 +194,9 @@ body {
 }
 
 .project-card:hover {
-  border-color: #38bdf8;
-  transform: translateY(-5px);
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.3);
 }
 
 .project-title {
