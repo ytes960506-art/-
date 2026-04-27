@@ -82,7 +82,6 @@ Object.entries(skills).forEach(([category, list]) => {
       ${list.map(skill => `<span>${skill}</span>`).join("")}
     </div>
   `;
-
   skillsContainer.appendChild(div);
 });
 // Skills
